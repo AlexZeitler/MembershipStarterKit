@@ -87,7 +87,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\blank.txt" />
     <Content Include="Areas\UserAdministration\Views\UserAdministration\CreateUser.aspx" />
     <Content Include="Areas\UserAdministration\Views\UserAdministration\UsersRoles.aspx" />
     <Content Include="Areas\UserAdministration\Views\UserAdministration\Password.aspx" />
@@ -125,6 +124,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
