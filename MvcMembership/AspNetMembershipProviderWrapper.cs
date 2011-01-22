@@ -96,6 +96,23 @@ namespace MvcMembership
 			return _membershipProvider.GetUser(providerUserKey, false);
 		}
 
+        public MembershipCreateStatus Create(string userName, string password, string email)
+        {
+            return this.Create(userName, password, email, null, null);
+        }
+
+        public MembershipCreateStatus Create(string userName, string password, string email, string passwordQuestion, string passwordAnswer)
+        {
+            return this.Create(userName, password, email, passwordQuestion, passwordAnswer, true);
+        }
+
+        public MembershipCreateStatus Create(string userName, string password, string email, string passwordQuestion, string passwordAnswer, bool IsApproved)
+        {
+            MembershipCreateStatus status;
+            _membershipProvider.CreateUser(userName, password, email, passwordQuestion, passwordAnswer, IsApproved, null, out status);
+
+            return status;
+        }
 		public void Update(MembershipUser user)
 		{
 			_membershipProvider.UpdateUser(user);

@@ -11,6 +11,11 @@
 	<h2 class="mvcMembership">User Administration</h2>
 	
 	<h3 class="mvcMembership">Users</h3>
+    <div>
+        <ul>
+            <li><%: Html.ActionLink("Create User","CreateUser") %></li>
+        </ul>
+    </div>
 	<div class="mvcMembership-allUsers">
 	<% if(Model.Users.Count > 0){ %>
 		<ul class="mvcMembership mvcMembership-users">

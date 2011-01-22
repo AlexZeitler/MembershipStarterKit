@@ -44,6 +44,7 @@
       <HintPath>..\References\PagedList - 1.1\PagedList.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\UserAdministration\Controllers\UserAdministrationController.cs" />
+    <Compile Include="Areas\UserAdministration\Models\UserAdministration\CreateViewModel.cs" />
     <Compile Include="Areas\UserAdministration\Models\UserAdministration\DetailsViewModel.cs" />
     <Compile Include="Areas\UserAdministration\Models\UserAdministration\IndexViewModel.cs" />
     <Compile Include="Areas\UserAdministration\Models\UserAdministration\RoleViewModel.cs" />
@@ -86,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\blank.txt" />
+    <Content Include="Areas\UserAdministration\Views\UserAdministration\CreateUser.aspx" />
     <Content Include="Areas\UserAdministration\Views\UserAdministration\UsersRoles.aspx" />
     <Content Include="Areas\UserAdministration\Views\UserAdministration\Password.aspx" />
     <Content Include="Areas\UserAdministration\Views\UserAdministration\Details.aspx" />
