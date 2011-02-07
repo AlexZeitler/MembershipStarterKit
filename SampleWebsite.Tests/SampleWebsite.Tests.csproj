@@ -106,10 +106,6 @@
       <Project>{C9D7F653-E589-44CE-9D41-89821F4F9E4E}</Project>
       <Name>MvcMembership</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SampleWebsite\SampleWebsite.csproj">
-      <Project>{80C05049-D202-49CD-B9EA-9210429FC8FA}</Project>
-      <Name>SampleWebsite</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

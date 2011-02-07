@@ -1,0 +1,10 @@
+﻿@if(Request.IsAuthenticated) {
+    <text>Welcome <b>@Context.User.Identity.Name</b>!
+    [ @Html.ActionLink("Log Off", "LogOff", "Account", new { Area = "" }, new { }) ]</text>
+    if(Roles.IsUserInRole("Administrator")) {
+        @:[ @Html.ActionLink("User Administration", "Index", "UserAdministration", new { Area = "UserAdministration" }, new { }) ]
+    }
+}
+else {
+    @:[ @Html.ActionLink("Log On", "LogOn", "Account", new { Area = "" }, new { }) ]
+}
