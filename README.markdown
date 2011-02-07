@@ -13,7 +13,15 @@ Out of the box, the starter kit gives you the following features:
 * Change Email Address
 * Change a User's Roles
 
-Some screenshots of the UI are [available on my blog](http://www.squaredroot.com/2009/08/07/mvcmembership-release-1-0/). While that blog post announced an older version of the project, the screenshots still accurately reflect the current version.
+Some screenshots of the UI are [available on TroyGoode's blog](http://www.squaredroot.com/2009/08/07/mvcmembership-release-1-0/). While that blog post announced an older version of the project, the screenshots still accurately reflect the current version.
+
+# New Features of this fork
+
+By Derek Chafin aka infomaniac50
+
+1. The membership library now has the ability to create new users.
+2. The user administration area has been updated to add new users.
+
 
 # How do I use it?
 
