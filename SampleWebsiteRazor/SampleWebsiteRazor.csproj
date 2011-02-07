@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\UserAdministration\Views\UserAdministration\CreateUser.aspx" />
+    <Content Include="Content\MvcMembership.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

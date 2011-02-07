@@ -2,8 +2,8 @@
 
 
 @{
-    View.Title = "User Administration";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "User Administration";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <link href='@Url.Content("~/Content/MvcMembership.css")' rel="stylesheet" type="text/css" />
@@ -23,16 +23,16 @@
 			} else {
 				<span class="mvcMembership-isOffline">Offline for
 						@{
-                        string offlineMsg = "";
+						string offlineMsg = "";
 						var offlineSince = (DateTime.Now - @user.LastActivityDate);
 						if (offlineSince.TotalSeconds <= 60) { offlineMsg = "1 minute."; }
 						else if(offlineSince.TotalMinutes < 60) { offlineMsg = Math.Floor(offlineSince.TotalMinutes) + " minutes."; }
 						else if (offlineSince.TotalMinutes < 120) { offlineMsg = "1 hour."; }
 						else if (offlineSince.TotalHours < 24) { offlineMsg = Math.Floor(offlineSince.TotalHours) + " hours."; }
 						else if (offlineSince.TotalHours < 48) { offlineMsg = "1 day."; }
-                        else { offlineMsg = Math.Floor(offlineSince.TotalDays) + " days."; }
+						else { offlineMsg = Math.Floor(offlineSince.TotalDays) + " days."; }
 						}
-                        @offlineMsg
+						@offlineMsg
 				</span>
 			} 
 			@if(!string.IsNullOrEmpty(user.Comment)) {
